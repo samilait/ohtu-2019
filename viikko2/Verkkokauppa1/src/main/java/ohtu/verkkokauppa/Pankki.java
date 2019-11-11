@@ -1,5 +1,8 @@
 package ohtu.verkkokauppa;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Pankki implements IPankki {
 
     private IKirjanpito kirjanpito;
