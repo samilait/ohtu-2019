@@ -52,7 +52,7 @@ public class Player implements Comparable<Player> {
 
     @Override
     public String toString() {
-        return name + " team " + team + " goals " + goals + " assists " + assists;
+        return name + " " + team + " " + goals + " + " + assists + " = " + points;
     }
 
     @Override
