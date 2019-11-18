@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="As a user I want to be able to set the counter to value zero" tests="2" skipped="2" failures="0" errors="0" timestamp="2019-11-18T13:15:48" hostname="LAPTOP-GVHN9333" time="0.02">
+  <properties/>
+  <testcase name="Resetting after one increment" classname="As a user I want to be able to set the counter to value zero" time="0.014">
+    <skipped/>
+  </testcase>
+  <testcase name="Resetting after incrementing with several values" classname="As a user I want to be able to set the counter to value zero" time="0.004">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[
+Feature: As a user I want to be able to set the counter to value zero
+
+  Scenario: Resetting after one increment ?[90m# src/test/resources/ohtu/resetingCounter.feature:3?[0m
+    ?[32mGiven ?[0m?[32mCounter is initialized?[0m          ?[90m# Stepdefs.counterIsInitialized()?[0m
+    ?[32mWhen ?[0m?[32mit is incremented?[0m                ?[90m# Stepdefs.itIsIncremented()?[0m
+    ?[33mAnd ?[0m?[33mit is reset?[0m                       ?[90m# Stepdefs.itIsReset()?[0m
+      ?[33mcucumber.api.PendingException: TODO: implement me
+	at ohtu.Stepdefs.itIsReset(Stepdefs.java:35)
+	at ?.it is reset(file:src/test/resources/ohtu/resetingCounter.feature:6)
+?[0m
+    ?[36mThen ?[0m?[36mthe value should be ?[0m?[36m?[1m0?[0m            ?[90m# Stepdefs.theValueShouldBe(Integer)?[0m
+
+  Scenario: Resetting after incrementing with several values ?[90m# src/test/resources/ohtu/resetingCounter.feature:9?[0m
+    ?[32mGiven ?[0m?[32mCounter is initialized?[0m                             ?[90m# Stepdefs.counterIsInitialized()?[0m
+    ?[32mWhen ?[0m?[32mit is incremented by ?[0m?[32m?[1m5?[0m                              ?[90m# Stepdefs.itIsIncrementedBy(Integer)?[0m
+    ?[33mAnd ?[0m?[33mit is reset?[0m                                          ?[90m# Stepdefs.itIsReset()?[0m
+      ?[33mcucumber.api.PendingException: TODO: implement me
+	at ohtu.Stepdefs.itIsReset(Stepdefs.java:35)
+	at ?.it is reset(file:src/test/resources/ohtu/resetingCounter.feature:12)
+?[0m
+    ?[36mThen ?[0m?[36mthe value should be ?[0m?[36m?[1m0?[0m                               ?[90m# Stepdefs.theValueShouldBe(Integer)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
