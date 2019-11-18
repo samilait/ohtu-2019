@@ -1,5 +1,2 @@
 pekka;akkep
 jukka;akkuj
-sami;aaabbb11
-riina;topi
-sami7091;topi
