@@ -97,6 +97,12 @@ public class Stepdefs {
         pageHasContent("Create username and give password");
     }        
 
+    @Given("user with username {string} with password {string} is successfully created")
+    public void newUserIsSuccessfullyCreated(String username, String password) {
+        newUser(username, password, password);
+        logOut();
+    }    
+
     @After
     public void tearDown(){
         driver.quit();
@@ -128,6 +134,13 @@ public class Stepdefs {
         element.sendKeys(password);
         element = driver.findElement(By.name("signup"));
         element.submit();  
+        
+    }
+    
+    private void logOut() {
+        assertTrue(driver.getPageSource().contains("Ohtu Application main page"));
+        WebElement element = driver.findElement(By.linkText("logout"));
+        element.click();
         
     }
 }
