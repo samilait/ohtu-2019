@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtu.KauppaTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2019-11-25T16:35:50" hostname="LAPTOP-GVHN9333" time="0.495">
+<testsuite name="ohtu.KauppaTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2019-11-25T16:58:06" hostname="LAPTOP-GVHN9333" time="1.025">
   <properties/>
-  <testcase name="kutsutaanPankkiaOikeallaTilinumerollaJaSummalla" classname="ohtu.KauppaTest" time="0.465"/>
-  <testcase name="pyydetaanUusiViiteJokaiseenMaksuun" classname="ohtu.KauppaTest" time="0.001"/>
+  <testcase name="kutsutaanPankkiaOikeallaTilinumerollaJaSummalla" classname="ohtu.KauppaTest" time="0.95"/>
+  <testcase name="pyydetaanUusiViiteJokaiseenMaksuun" classname="ohtu.KauppaTest" time="0.003"/>
   <testcase name="kutsutaanPankkiaOikeallaTilinumerolla" classname="ohtu.KauppaTest" time="0.001"/>
-  <testcase name="kaytetaanMaksussaPalautettuaViiteta" classname="ohtu.KauppaTest" time="0.024">
+  <testcase name="kaytetaanMaksussaPalautettuaViiteta" classname="ohtu.KauppaTest" time="0.052">
     <failure message="Argument(s) are different! Wanted:&#10;pankki.maksa(&#10;    &lt;any string&gt;,&#10;    &lt;any integer&gt;,&#10;    54&#10;);&#10;-&gt; at ohtu.KauppaTest.kaytetaanMaksussaPalautettuaViiteta(KauppaTest.java:81)&#10;Actual invocations have different arguments:&#10;pankki.maksa(&#10;    &quot;1111&quot;,&#10;    10,&#10;    55&#10;);&#10;-&gt; at ohtu.Kauppa.maksa(Kauppa.java:25)&#10;" type="org.mockito.exceptions.verification.junit.ArgumentsAreDifferent">Argument(s) are different! Wanted:
 pankki.maksa(
     &lt;any string&gt;,
@@ -70,7 +70,7 @@ pankki.maksa(
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="kaytetaanPerakkaistenViitekutsujenArvoja" classname="ohtu.KauppaTest" time="0.002"/>
+  <testcase name="kaytetaanPerakkaistenViitekutsujenArvoja" classname="ohtu.KauppaTest" time="0.012"/>
   <testcase name="kutsutaanPankkia" classname="ohtu.KauppaTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
