@@ -108,6 +108,7 @@ public class Sovellus {
     }
 
     public static void main(String[] args) {
+        
         A = new IntJoukko();
         B = new IntJoukko();
         C = new IntJoukko();
