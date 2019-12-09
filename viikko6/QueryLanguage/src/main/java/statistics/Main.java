@@ -39,15 +39,23 @@ public class Main {
 //                    new HasAtLeast(20, "assists")
 //        ); 
         
-        Matcher m = new And(
-            new HasAtLeast(20, "points"),
-            new Or( 
-                new PlaysIn("NYR"),
-                new PlaysIn("NYI"),
-                new PlaysIn("NJD")
-            )
-        ); 
+//        Matcher m = new And(
+//            new HasAtLeast(20, "points"),
+//            new Or( 
+//                new PlaysIn("NYR"),
+//                new PlaysIn("NYI"),
+//                new PlaysIn("NJD")
+//            )
+//        ); 
 
+        QueryBuilder query = new QueryBuilder();
+//        Matcher m = query.build();
+//        Matcher m = query.playsIn("NYR").build();
+
+        Matcher m = query.hasAtLeast(5, "goals").playsIn("NYR").build();
+//                     .hasAtLeast(5, "goals").build();
+//                     .hasFewerThan(10, "goals").build();        
+        
         for (Player player : stats.matches(m)) {
             System.out.println(player);
         }
